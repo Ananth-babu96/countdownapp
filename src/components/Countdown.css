@@ -41,3 +41,13 @@
 .icon:hover{
     fill:hsl(345, 95%, 68%);
 }
+.line{
+    position:absolute;
+    
+    width:100%;
+    background:black;
+    
+    z-index: ;
+}
+
+

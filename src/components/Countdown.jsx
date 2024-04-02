@@ -22,10 +22,10 @@ const Countdown = () => {
   let seconds =Math.floor((remainingDays%oneMinute)/1000);
   console.log(seconds);
 
-  const [secs,setSecs] = useState();
-  const [mins,setMins]  = useState();
-  const [hrs,setHrs] = useState();
-  const [dayz,setDayz] = useState()
+  const [secs,setSecs] = useState("--");
+  const [mins,setMins]  = useState("--");
+  const [hrs,setHrs] = useState("--");
+  const [dayz,setDayz] = useState("--")
  useEffect(()=>{
    const intervalId=setInterval(()=>{
     setSecs(seconds)
@@ -44,11 +44,11 @@ const Countdown = () => {
             WE'RE  LAUNCHING  SOON
         </div>
     </div>
-    <div className="row mt-5">
+    <div className="row mt-5 ">
             <div className="col text-light text-center">
                 <div className="box-container">
                  <div className="box rounded">
-
+                 <hr className='line'/>
                     <div className="circle"></div>
                     <div className="circleTwo"></div>
 
@@ -61,6 +61,7 @@ const Countdown = () => {
             <div className="col text-light text-center">
                 <div className="box-container">
                  <div className="box rounded">
+                  <hr className='line'/>
                  <div className="circle"></div>
                     <div className="circleTwo"></div>
                    <div className="number">{hrs<=9?`0${hrs}`:hrs}</div>
@@ -72,6 +73,7 @@ const Countdown = () => {
             <div className="col text-light text-center">
                 <div className="box-container">
                  <div className="box rounded">
+                 <hr className='line'/>
                  <div className="circle"></div>
                     <div className="circleTwo"></div>
                    <div className="number">{mins<=9?`0${mins}`:mins}</div>
@@ -83,6 +85,7 @@ const Countdown = () => {
             <div className="col text-light text-center">
                 <div className="box-container">
                  <div className="box rounded">
+                 <hr className='line'/>
                  <div className="circle"></div>
                     <div className="circleTwo"></div>
                    <div className="number">{secs<=9?`0${secs}`:secs}</div>
