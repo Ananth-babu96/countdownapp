@@ -1,9 +1,13 @@
 import './App.css';
+import Countdown from './components/Countdown';
 
 function App() {
   return (
-    <div className="App">
-        count down project
+    <div className="container-fluid app d-flex flex-column align-items-center justify-content-center">
+      
+      <Countdown/>
+      
+
     </div>
   );
 }
